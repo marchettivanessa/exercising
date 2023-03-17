@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"io"
 	"os"
 	"strconv"
@@ -15,7 +16,22 @@ import (
  */
 
 func staircase(n int32) {
-	// Write your code here
+	var i int32 = 0
+
+	for i = 1; i <= n; i++ {
+		var n_1 int32 = n - i
+		var nEsp int32 = 1
+		var nHash int32 = 1
+		for nEsp <= n_1 {
+			fmt.Print(" ")
+			nEsp++
+		}
+		for nHash <= i {
+			fmt.Print("#")
+			nHash++
+		}
+		fmt.Println()
+	}
 
 }
 
