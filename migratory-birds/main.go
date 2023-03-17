@@ -6,6 +6,7 @@ func migratoryBirds(arr []int32) int32 {
 	frequency := map[int32]int32{
 		arr[0]: 1,
 	}
+
 	bird := arr[0]
 
 	for i := 1; i < len(arr); i++ {
@@ -21,5 +22,5 @@ func migratoryBirds(arr []int32) int32 {
 
 func main() {
 	fmt.Println(migratoryBirds([]int32{1, 4, 7, 4, 4, 1}))
-	fmt.Println(migratoryBirds([]int32{1, 4, 7, 2, 3}))
+	fmt.Println(migratoryBirds([]int32{1, 4, 7, 2, 3,2}))
 }
